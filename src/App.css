@@ -15,11 +15,11 @@
 }
 .body{
   background-color: green;
-  position: relative;
-  top: 10%;
+  position: absolute;
+  bottom: 0px;
   left: 13%;
   width: 75%;
-  height: 80%;
+  height: 85%;
   padding-top: 3%;
   box-sizing: border-box;
   display: flex;
