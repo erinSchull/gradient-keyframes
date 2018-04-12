@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  background-image:
+  linear-gradient(135deg, grey 25%, transparent 25%), 
+  linear-gradient(45deg, rgb(104, 104, 104) 25%, transparent 25%),
+  linear-gradient(135deg, rgb(104, 104, 104) 75%, grey 75%),
+  linear-gradient(45deg, rgb(104, 104, 104) 75%, grey 75%);
+  background-size: 30px 30px; /* Must be a square */
+  background-position:0 0, 15px 0, 15px -15px, 0 15px; /*must be half of background size*/
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.body{
+  background-color: green;
+  position: relative;
+  top: 10%;
+  left: 13%;
+  width: 75%;
+  height: 80%;
+  padding-top: 3%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  transition: all 0.25s ease;
+}
+.title{
+  color: blue;
+  font: Helvetica, Sans-Serif;
+  width: 50%;
+}
+@keyframes hilite{
+  20% {transform: translateY(4px)};
+  100% {transform: translateY(8px)};
+}
+.title:hover{
+  color: white;
+  animation: hilite 2s ease;
+  background-color: blue;
+  animation-iteration-count: 1;
+  transform: inherit;
+}
+.my-box{
+  background-color: lightgray;
+  width: 250px;
+  color: black;
+  height: 100px;
+  box-sizing: border-box;
+  border: solid 3px coral;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+@keyframes wiggle{
+  20% {transform: translateX(6px);}
+  40% {transform: translateX(-6px);}
+  60% {transform: translateX(3px);}
+  80% {transform: translateX(-1px);}
+  100% {transform: translateX(0px);}
+}
+.my-box:hover{
+  animation: wiggle 3s ease;
+  animation-iteration-count: 2;
+  transform: inherit;
+}
