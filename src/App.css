@@ -67,6 +67,13 @@
   height: 150px;
   width: 25%;
   margin: 5px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.pictures section img{
+  width: 90%;
 }
 
 
