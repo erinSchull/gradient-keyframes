@@ -1,12 +1,12 @@
 .App {
   text-align: center;
   background-image:
-  linear-gradient(135deg, grey 25%, transparent 25%), 
-  linear-gradient(45deg, rgb(104, 104, 104) 25%, transparent 25%),
-  linear-gradient(135deg, rgb(104, 104, 104) 75%, grey 75%),
-  linear-gradient(45deg, rgb(104, 104, 104) 75%, grey 75%);
-  background-size: 30px 30px; /* Must be a square */
-  background-position:0 0, 15px 0, 15px -15px, 0 15px; /*must be half of background size*/
+  linear-gradient(135deg, rgba(255, 255, 255, 0.877) 25%, transparent 25%), 
+  linear-gradient(45deg, #FFC6E0 25%, transparent 25%),
+  linear-gradient(135deg, #FFC6E0 75%, rgba(255, 255, 255, 0.877) 75%),
+  linear-gradient(45deg, #FFC6E0 75%, rgba(255, 255, 255, 0.877) 75%);
+  background-size: 20px 20px; /* Must be a square */
+  background-position:0 0, 10px 0, 10px -10px, 0 10px; /*must be half of background size*/
   height: 100%;
   position: absolute;
   top: 0%;
@@ -17,8 +17,11 @@
   position: absolute;
   left: 13%;
   width: 75%;
-  /* border: 3px solid firebrick; */
   height: 15%;
+}
+.header h1{
+  color: #7B287D;
+  font-size: 40px;
 }
 .my-widget{
   border-left: 1px solid white;
@@ -27,14 +30,14 @@
   background-color: grey;
   border-radius: 5px;
   float: right;
-  color: firebrick;
+  color: #FCF6BD;
   position: relative;
   right: 0%;
-  top: 28px;
+  top: 5px;
   padding: 12px;
 }
 .body{
-  background-color: green;
+  background-color: #A9DEF9;
   position: absolute;
   bottom: 0px;
   left: 13%;
@@ -48,22 +51,26 @@
   transition: all 0.25s ease;
 }
 .title{
-  color: blue;
+  color: #7067CF;
   font: Helvetica, Sans-Serif;
   width: 50%;
 }
+.pick-title{
+  color: #FF99C8;
+}
 .pictures{
-  padding: 20px;
-  border: 3px solid aqua;
+  border-radius: 20px;
   width: 60%;
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 30px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .pictures section {
-  border: 2px solid blue;
   height: 150px;
   width: 25%;
   margin: 5px;
@@ -71,11 +78,18 @@
   flex-flow: column;
   align-items: center;
   padding-bottom: 10px;
-}
-.pictures section img{
-  width: 90%;
+  background-color: transparent;
+  color: #330C2F;
+  font-size: 20px;
 }
 
+.checking-state-num{
+  color: #FF99C8;
+}
+.state-num{
+  color: whitesmoke;
+  font-size: 20px;
+}
 
 @keyframes hilite{
   20% {transform: translateY(4px)};
@@ -84,17 +98,17 @@
 .title:hover{
   color: white;
   animation: hilite 2s ease;
-  background-color: blue;
+  background-color: #7067CF;
   animation-iteration-count: 1;
   transform: inherit;
 }
 .my-box{
-  background-color: lightgray;
+  background-color: white;
   width: 250px;
-  color: black;
+  color: #330C2F;
   height: 100px;
   box-sizing: border-box;
-  border: solid 3px coral;
+  border: solid 7px #E4C1F9;
   border-radius: 20px;
   display: flex;
   align-items: center;
